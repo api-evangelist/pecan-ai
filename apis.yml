@@ -1,8 +1,29 @@
 aid: pecan-ai
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pecan-ai.png
 name: Pecan AI
-description: 'Pecan AI is a company surfaced as a portfolio company of gv, insight-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Pecan AI is a predictive analytics platform that lets business teams build and
+  deploy machine-learning models without data-science expertise. Its AI agents turn
+  a business question into a working predictive model, covering customer churn,
+  customer lifetime value (LTV), lead scoring, demand forecasting, upsell and
+  cross-sell, campaign ROAS, fraud and chargeback prevention, and customer winback.
+  Users connect their data (including Databricks and cloud warehouses), let Pecan
+  generate and evaluate models, and produce predictions for marketing, sales,
+  finance, and operations teams. Pecan is backed by GV and Insight Partners. The
+  company operates a SaaS web application and publishes no public developer API,
+  SDK, or OpenAPI at this time; this profile captures its identity, security
+  posture, and marketing surface.
 url: https://raw.githubusercontent.com/api-evangelist/pecan-ai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +34,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Ai
+- Predictive Analytics
+- Machine Learning
+- Data Science
+- Forecasting
+- Customer Analytics
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +52,39 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://pecan.ai
+  url: https://www.pecan.ai
+- type: Documentation
+  url: https://help.pecan.ai/en/
+- type: Support
+  url: https://www.pecan.ai/contact/
+- type: Blog
+  url: https://www.pecan.ai/blog/
+- type: Pricing
+  url: https://www.pecan.ai/pricing/
+- type: Login
+  url: https://app.pecan.ai
+- type: GitHubOrganization
+  url: https://github.com/pecan-ai
+- type: PrivacyPolicy
+  url: https://www.pecan.ai/privacy/
+- type: TermsOfService
+  url: https://www.pecan.ai/license-agreement/
+- type: Compliance
+  url: https://www.pecan.ai/platform/data-security/
+- type: TrustCenter
+  url: https://www.pecan.ai/platform/data-security/
+- type: Conformance
+  url: conformance/pecan-ai-conformance.yml
+- type: DomainSecurity
+  url: security/pecan-ai-domain-security.yml
+- type: LLMsTxt
+  url: llms/pecan-ai-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
+  notes: >-
+    Re-run pass: confirmed no public API/OpenAPI/SDK surface (no api./developer./docs.
+    subdomains; all /.well-known/* return 404; llms.txt is Pecan's real published file).
+    Added verified GitHubOrganization pointer (github.com/pecan-ai, 3 public repos).
